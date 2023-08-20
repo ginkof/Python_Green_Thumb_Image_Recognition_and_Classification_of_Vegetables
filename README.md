@@ -1,20 +1,17 @@
 # Veggie Tales
 Image classification app + text creation via openai API
 
-
-## Description
-
-### App
+### The App
 
 We built a Streamlit app structured in three main sections. In the first, the user can upload an image or take a picture of a vegetable that will then be classified according to a list of 16 classes. The second is intended for kids; based on the detected vegetable, openai API creates four facts and a story that are meant for the user to learn about the ingredient. The third is intended for a broader audience. The user gets five specific facts (historical, cultural, health, fun and bad) and a recipe suggestion. 
 
-For details on dependencies and libraries check [requirements.txt](). For getting your own API key for openai, follow [this](https://platform.openai.com/docs/api-reference/authentication) link.
+For details on dependencies and libraries check [requirements.txt](). For getting your own API key for openai, follow [this](https://platform.openai.com/docs/api-reference/authentication) link. All the results are summarized in the [presentation](https://github.com/ginkof/Python_Green_Thumb_Image_Recognition_and_Classification_of_Vegetables/blob/main/Project%20Presentation.pptx) (Use of PPT recommended to enjoy visualization).
 
-### Image classification model
+### The image classification model
 
-Classification is performed via the pre-trained deep learning model [InceptionV3](https://www.tensorflow.org/api_docs/python/tf/keras/applications/inception_v3) from Tensorflow. We unfroze the last 15 layers and trained them on 16 classes of the  [dataset](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition) Fruits and Vegetables Image Recognition from kaggle. For details see the related [notebook](https://github.com/hattwich/veggie_tales/blob/main/notebooks/inception_16classes.ipynb).
+Classification is performed via the pre-trained deep learning model [InceptionV3](https://www.tensorflow.org/api_docs/python/tf/keras/applications/inception_v3) from Tensorflow. We unfroze the last 15 layers and trained them on 16 classes of the  [dataset](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition) Fruits and Vegetables Image Recognition from kaggle. For details see the related [notebook](https://github.com/ginkof/Python_Green_Thumb_Image_Recognition_and_Classification_of_Vegetables/blob/main/notebooks/inception_16classes.ipynb).
 
-Previously, we built up our own deep learning model trained on only two classes. In order to increase the accuracy, we used a different [dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset) with a larger number of training images. For details see the related [notebook](https://github.com/hattwich/veggie_tales/blob/main/notebooks/dl_2classes.ipynb).
+Previously, we built up our own deep learning model trained on only two classes. In order to increase the accuracy, we used a different [dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset) with a larger number of training images. For details see the related [notebook](https://github.com/ginkof/Python_Green_Thumb_Image_Recognition_and_Classification_of_Vegetables/blob/main/notebooks/dl_2classes.ipynb).
 
 
 ### Outlook
