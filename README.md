@@ -14,10 +14,6 @@ Classification is performed via the pre-trained deep learning model [InceptionV3
 Previously, we built up our own deep learning model trained on only two classes. In order to increase the accuracy, we used a different [dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset) with a larger number of training images. For details see the related [notebook](https://github.com/ginkof/Python_Green_Thumb_Image_Recognition_and_Classification_of_Vegetables/blob/main/notebooks/dl_2classes.ipynb).
 
 
-### Outlook
-* Add text to speech option for listening to the text parts of the app
-* Increase the number of classes within the vegetable category and/or other categories (like fruits)
-* Add personalized text generation 
 
 ### Resources
 
